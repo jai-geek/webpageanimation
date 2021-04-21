@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.anime{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: gray;
+z-index: -1;
+}
+nav{
+   display: grid;
+   grid-template-rows: 10% 1fr 1fr 10%;
+   min-height: 10vh;
+   color: white;
+   
+
+}
+
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.page{
+    height: 70%;
+    width: 100%;
+    
+    position: relative;
+}
+
+#logo{
+    grid-column: 2/3;
+    font-size: 30px;
+    left: 10%;
+}
+.page img{
+    width: 100%;
+    height:100%; 
+    object-fit: cover;
+
+}
+.line{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);
+    color: white;
+    z-index: 3;
+
+
+}
+
+.page::after{
+    content: ""; 
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+}
